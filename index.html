@@ -1,166 +1,492 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Saugat Dhungana - Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body, h1, h2, h3, h4, h5, h6 {font-family: "Raleway", sans-serif}
-    body, html {height: 100%; line-height: 1.8;}
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
-      min-height: 100%;
-    }
-    .w3-bar .w3-button {padding: 16px;}
-  </style>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Steller landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Steller Landing page | Free Bootstrap 4.1 landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="assets/css/steller.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">Saugat Dhungana</a>
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#skills" class="w3-bar-item w3-button">SKILLS</a>
-      <a href="#work" class="w3-bar-item w3-button">PORTFOLIO</a>
-      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
-    </div>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testmonial">Testmonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="- btn btn-primary rounded ml-4" href="components.html">Copmonents</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
 
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Welcome to My Portfolio</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to My Portfolio</span><br>
-    <span class="w3-large">I am Saugat Dhungana, a Computer Engineering student.</span>
-  </div>
-</header>
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="subtitle">hello,I'm</h6>
+                <h6 class="title">James Smith</h6>
+                <p>UI/UX Designer</p>
 
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center w3-large">Computer Engineering Student</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-third">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Passionate Learner</p>
-      <p>Currently pursuing a degree in Computer Engineering with a passion for learning and exploring new technologies.</p>
-    </div>
-    <div class="w3-third">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Programming</p>
-      <p>Love coding and solving problems. Proficient in various programming languages and always eager to take on new challenges.</p>
-    </div>
-    <div class="w3-third">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Tech Enthusiast</p>
-      <p>Fascinated by the world of technology, from software development to hardware systems. Always staying up-to-date with the latest trends.</p>
-    </div>
-  </div>
-</div>
+                <div class="buttons pt-3">
+                    <button class="btn btn-primary rounded">HIRE ME</button>
+                    <button class="btn btn-dark rounded">DOWNLOAD CV</button>
+                </div>      
 
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="skills">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>My Skills</h3>
-      <p>I possess a strong foundation in computer engineering and have acquired various skills in the field. Here are some of my key skills:</p>
-      <ul>
-        <li>Programming Languages: C, C++, Java, Python</li>
-        <li>Web Development: HTML, CSS, JavaScript</li>
-        <li>Database Management: MySQL</li>
-        <li>Operating Systems: Windows, Linux</li>
-        <li>Problem Solving and Algorithm Design</li>
-      </ul>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-code w3-margin-right"></i>Programming</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-laptop w3-margin-right"></i>Web Development</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:80%">80%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-database w3-margin-right"></i>Database Management</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="socials mt-4">
+                    <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
+                    <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
+                    <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
+                    <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
+                </div>
+            </div>              
+            <div class="img-holder">
+                <img src="assets/imgs/man.svg" alt="">
+            </div>      
+        </div>  
 
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">PORTFOLIO</h3>
-  <p class="w3-center w3-large">Check out some of my works.</p>
-  <!-- Your portfolio works can be added here as clickable images -->
-  <!-- Example: -->
-  <!--
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m4">
-      <img src="work1.jpg" style="width:100%" onclick="openModal('work1.jpg','Work 1')">
-    </div>
-    <div class="w3-col m4">
-      <img src="work2.jpg" style="width:100%" onclick="openModal('work2.jpg','Work 2')">
-    </div>
-    <div class="w3-col m4">
-      <img src="work3.jpg" style="width:100%" onclick="openModal('work3.jpg','Work 3')">
-    </div>
-  </div>
-  -->
-</div>
+        <!-- Header-widget -->
+        <div class="widget">
+            <div class="widget-item">
+                <h2>124</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="widget-item">
+                <h2>456</h2>
+                <p>Project Completed</p>
+            </div>
+            <div class="widget-item">
+                <h2>789</h2>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </header>
+    <!-- End of Page Header -->
+    
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">James Smith</h6>
+                    <p class="subtitle">UI/UX Designer</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus delectus totam sed aliquam sequi praesentium mollitia, illum repudiandae quidem quod, magni magnam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo praesentium qui temporibus voluptatum, facilis aliquid eligendi fugiat beatae neque inventore non. Laborum repellendus consequatur ullam voluptatum asperiores.</p>
+                    <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                   
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Add your modal code here for full-size images -->
+    <!-- Service section -->
+    <section id="service" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Service</h6>
+            <h6 class="section-title mb-4">What I Do</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
 
-<div class="w3-container w3-dark-grey w3-padding-32" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Drop me a message, and let's connect!</p>
-  <div class="w3-row-padding w3-center w3-padding-24">
-    <div class="w3-third">
-      <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-      <p>saugat@example.com</p>
-    </div>
-    <div class="w3-third">
-      <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-      <p>Kathmandu, Nepal</p>
-    </div>
-    <div class="w3-third">
-      <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-      <p>+977 123 456 789</p>
-    </div>
-  </div>
-  <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top" onclick="document.getElementById('contact-form').style.display='block'">SEND MESSAGE</button></p>
-</div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-crown"></i>
+                            <h5>UI/UX Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-desktop"></i>
+                            <h5>Web Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-mobile"></i>
+                            <h5>App Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-bar-chart"></i>
+                            <h5>SEO</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Sectoin -->
 
-<!-- Add your contact form code here -->
+    <!-- Skills section -->
+    <section class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Skills</h6>
+            <h6 class="section-title mb-4">Why Choose me</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
 
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-  <div class="w3-xlarge w3-padding-32">
-    <a href="#home" class="w3-button w3-light-grey" title="To Top">^</a>
-    <div class="w3-padding-small">
-      <a href="#" class="w3-button w3-light-grey w3-hover-white w3-opacity w3-hover-opacity-off" title="Follow me on Facebook"><i class="fa fa-facebook-official w3-xxlarge"></i></a>
-      <a href="#" class="w3-button w3-light-grey w3-hover-white w3-opacity w3-hover-opacity-off" title="Follow me on Twitter"><i class="fa fa-twitter w3-xxlarge"></i></a>
-      <a href="#" class="w3-button w3-light-grey w3-hover-white w3-opacity w3-hover-opacity-off" title="Follow me on Instagram"><i class="fa fa-instagram w3-xxlarge"></i></a>
-      <a href="#" class="w3-button w3-light-grey w3-hover-white w3-opacity w3-hover-opacity-off" title="Follow me on LinkedIn"><i class="fa fa-linkedin w3-xxlarge"></i></a>
-    </div>
-  </div>
-</footer>
+            <div class="row text-left">
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Photoshop</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Web Design</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">App Design</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">SEO</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- End of Skills sections -->
 
-<!-- Add your scripts here -->
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Portfolio</h6>
+            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Testmonial Section -->
+    <section id="testmonial" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Testmonial</h6>
+            <h6 class="section-title mb-4">What People Say About Me</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/avatar-1.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
+                                <h1 class="title">Emma Re</h1>
+                                <h1 class="subtitle">Graphic Designer</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/avatar-2.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
+                                <h1 class="title">James Bert</h1>
+                                <h1 class="subtitle">Web Designer</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/avatar-3.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
+                                <h1 class="title">Michael Abra</h1>
+                                <h1 class="subtitle">Web Developer</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of testmonial section -->
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">My Blogs</h6>
+            <h6 class="section-title mb-4">Latest News</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+
+            <div class="row text-left">
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Designe for Everyone</h5>
+                            <div class="post-details">
+                                <a href="javascript:void(0)">Posted By: Admin</a>
+                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
+                            <a href="javascript:void(0)">Read More..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Layouts</h5>
+                            <div class="post-details">
+                                <a href="javascript:void(0)">Posted By: Admin</a>
+                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
+                            <a href="javascript:void(0)">Read More..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap Framework</h5>
+                            <div class="post-details">
+                                <a href="javascript:void(0)">Posted By: Admin</a>
+                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
+                            <a href="javascript:void(0)">Read More..</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire me section -->
+    <section class="bg-gray p-0 section">
+        <div class="container">
+            <div class="card bg-primary">
+                <div class="card-body text-light">
+                    <div class="row align-items-center">
+                        <div class="col-sm-9 text-center text-sm-left">
+                            <h5 class="mt-3">Hire Me For Your Project</h5>
+                            <p class="mb-3">Accusantium labore nostrum similique quisquam.</p>
+                        </div>
+                        <div class="col-sm-3 text-center text-sm-right">
+                            <button class="btn btn-light rounded">Hire Me!</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>      
+    <!-- End od Hire me section. -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="position-relative section">
+        <div class="container text-center">
+            <h6 class="subtitle">Contact</h6>
+            <h6 class="section-title mb-4">Get In Touch With Me</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+
+            <div class="contact text-left">
+                <div class="form">
+                    <h6 class="subtitle">Available 24/7</h6>
+                    <h6 class="section-title mb-4">Get In Touch</h6>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-infos">
+                    <div class="item">
+                        <i class="ti-location-pin"></i>
+                        <div class="">
+                            <h5>Location</h5>
+                            <p> 12345 Fake ST NoWhere AB Country</p>
+                        </div>                          
+                    </div>
+                    <div class="item">
+                        <i class="ti-mobile"></i>
+                        <div>
+                            <h5>Phone Number</h5>
+                            <p>(123) 456-7890</p>
+                        </div>                          
+                    </div>
+                    <div class="item">
+                        <i class="ti-email"></i>
+                        <div class="mb-0">
+                            <h5>Email Address</h5>
+                            <p>info@website.com</p>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </div>  
+        <div id="map">
+            <iframe src="https://snazzymaps.com/embed/61257"></iframe>
+        </div>      
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com" target="_blank">DevCRUD</a></p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="socials">
+                        <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
+                        <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
+                        <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
+                        <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- End of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
 
 </body>
 </html>
